@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 4)
+    (drawings 0)
     (tracks 0)
     (zones 0)
     (modules 8)
@@ -40,15 +40,15 @@
   )
 
   (setup
-    (last_trace_width 0.254)
-    (trace_clearance 0.254)
+    (last_trace_width 0.25)
+    (trace_clearance 0.15)
     (zone_clearance 0.508)
     (zone_45_only no)
-    (trace_min 0.1524)
-    (via_size 0.762)
-    (via_drill 0.381)
-    (via_min_size 0.508)
-    (via_min_drill 0.254)
+    (trace_min 0.16)
+    (via_size 0.6)
+    (via_drill 0.3)
+    (via_min_size 0.6)
+    (via_min_drill 0.3)
     (uvia_size 0.762)
     (uvia_drill 0.381)
     (uvias_allowed no)
@@ -106,10 +106,10 @@
   (net 7 SCL)
 
   (net_class Default "This is the default net class."
-    (clearance 0.254)
-    (trace_width 0.254)
-    (via_dia 0.762)
-    (via_drill 0.381)
+    (clearance 0.15)
+    (trace_width 0.25)
+    (via_dia 0.6)
+    (via_drill 0.3)
     (uvia_dia 0.762)
     (uvia_drill 0.381)
     (add_net 3V3)
@@ -169,8 +169,8 @@
     )
   )
 
-  (module Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical (layer F.Cu) (tedit 59FED6E3) (tstamp 61BA94E7)
-    (at 160.02 78.74)
+  (module Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical (layer F.Cu) (tedit 59FED6E3) (tstamp 61BBEC02)
+    (at 157.48 78.74)
     (descr "Through hole straight pin header, 2x04, 1.27mm pitch, double rows")
     (tags "Through hole pin header THT 2x04 1.27mm double row")
     (path /618C7D19)
@@ -229,7 +229,7 @@
   )
 
   (module Silicon-Standard:SOT23-3 (layer F.Cu) (tedit 200000) (tstamp 61B43797)
-    (at 155.93822 82.22996 270)
+    (at 154.03322 82.87004 270)
     (descr SOT23-3)
     (tags SOT23-3)
     (path /61A870A1)
@@ -257,7 +257,7 @@
   )
 
   (module Silicon-Standard:SOT23-3 (layer F.Cu) (tedit 200000) (tstamp 61B437A6)
-    (at 155.93822 78.74 270)
+    (at 154.03322 79.06004 270)
     (descr SOT23-3)
     (tags SOT23-3)
     (path /61A8B36E)
@@ -284,8 +284,8 @@
       (net 3 3V3) (solder_mask_margin 0.1016))
   )
 
-  (module Resistors:0603 (layer F.Cu) (tedit 200000) (tstamp 61B437BE)
-    (at 151.55164 80.01)
+  (module Resistors:0603 (layer F.Cu) (tedit 200000) (tstamp 61BBE807)
+    (at 150.70836 80.01)
     (descr "GENERIC 1608 (0603) PACKAGE")
     (tags "GENERIC 1608 (0603) PACKAGE")
     (path /61A870E3)
@@ -321,7 +321,7 @@
   )
 
   (module Resistors:0603 (layer F.Cu) (tedit 200000) (tstamp 61B437D6)
-    (at 151.55164 82.55)
+    (at 150.70836 83.566)
     (descr "GENERIC 1608 (0603) PACKAGE")
     (tags "GENERIC 1608 (0603) PACKAGE")
     (path /61A88538)
@@ -356,8 +356,8 @@
       (net 2 5V) (solder_mask_margin 0.1016))
   )
 
-  (module Resistors:0603 (layer F.Cu) (tedit 200000) (tstamp 61BBE429)
-    (at 151.55164 78.74)
+  (module Resistors:0603 (layer F.Cu) (tedit 200000) (tstamp 61BBF0B3)
+    (at 150.70836 78.486)
     (descr "GENERIC 1608 (0603) PACKAGE")
     (tags "GENERIC 1608 (0603) PACKAGE")
     (path /61A89641)
@@ -393,7 +393,7 @@
   )
 
   (module Resistors:0603 (layer F.Cu) (tedit 200000) (tstamp 61BA92FF)
-    (at 151.55164 81.28)
+    (at 150.70836 82.042)
     (descr "GENERIC 1608 (0603) PACKAGE")
     (tags "GENERIC 1608 (0603) PACKAGE")
     (path /61A8B7FB)
@@ -427,10 +427,5 @@
     (pad 1 smd rect (at -0.84836 0) (size 1.09982 0.99822) (layers F.Cu F.Paste F.Mask)
       (net 2 5V) (solder_mask_margin 0.1016))
   )
-
-  (gr_line (start 144.78 86.36) (end 144.78 76.2) (layer Edge.Cuts) (width 0.05) (tstamp 61BBE576))
-  (gr_line (start 163.83 86.36) (end 144.78 86.36) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 163.83 76.2) (end 163.83 86.36) (layer Edge.Cuts) (width 0.05))
-  (gr_line (start 144.78 76.2) (end 163.83 76.2) (layer Edge.Cuts) (width 0.05))
 
 )
