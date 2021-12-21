@@ -13,45 +13,10 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J2
-U 1 1 618C7D19
-P 4250 3550
-F 0 "J2" H 4300 3867 50  0000 C CNN
-F 1 "Conn_02x04_Counter_Clockwise" H 4300 3776 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical" H 4250 3550 50  0001 C CNN
-F 3 "~" H 4250 3550 50  0001 C CNN
-	1    4250 3550
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4550 3450 4800 3450
+	4050 3450 3900 3450
 Wire Wire Line
-	4550 3550 4800 3550
-Wire Wire Line
-	4550 3650 4800 3650
-Wire Wire Line
-	4550 3750 4800 3750
-Wire Wire Line
-	4050 3450 3750 3450
-Wire Wire Line
-	4050 3550 3750 3550
-Wire Wire Line
-	4050 3650 3750 3650
-Wire Wire Line
-	4050 3750 3750 3750
-Text GLabel 3750 3550 0    50   Input ~ 0
-SDA
-Text GLabel 3750 3650 0    50   Input ~ 0
-SCL
-Text GLabel 3750 3750 0    50   Input ~ 0
-GND
-Text GLabel 4800 3550 2    50   Input ~ 0
-SDA
-Text GLabel 4800 3650 2    50   Input ~ 0
-SCL
-Text GLabel 4800 3750 2    50   Input ~ 0
-GND
+	4050 3650 3900 3650
 $Comp
 L SparkFun-DiscreteSemi:MOSFET-NCH-BSS138 Q1
 U 1 1 61A870A1
@@ -116,8 +81,6 @@ Wire Wire Line
 	8450 3700 8300 3700
 Wire Wire Line
 	6350 3700 6200 3700
-Text GLabel 4800 3450 2    50   Input ~ 0
-3V3
 Text GLabel 3750 3450 0    50   Input ~ 0
 3V3
 Text GLabel 6200 2850 1    50   Input ~ 0
@@ -226,4 +189,53 @@ Wire Wire Line
 Connection ~ 8300 3000
 Wire Wire Line
 	8300 3000 8300 3050
+Wire Wire Line
+	4050 3550 3900 3550
+Wire Wire Line
+	3900 3550 3900 3450
+Connection ~ 3900 3450
+Wire Wire Line
+	3900 3450 3750 3450
+$Comp
+L Connector_Generic:Conn_02x04_Counter_Clockwise J2
+U 1 1 618C7D19
+P 4250 3550
+F 0 "J2" H 4300 3867 50  0000 C CNN
+F 1 "Conn_02x04_Counter_Clockwise" H 4300 3776 50  0000 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical" H 4250 3550 50  0001 C CNN
+F 3 "~" H 4250 3550 50  0001 C CNN
+	1    4250 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 3750 3650 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	4050 3750 3900 3750
+Wire Wire Line
+	3900 3750 3900 3650
+Connection ~ 3900 3650
+Wire Wire Line
+	3900 3650 3750 3650
+Text GLabel 4850 3750 2    50   Input ~ 0
+SCL
+Text GLabel 4850 3550 2    50   Input ~ 0
+GND
+Wire Wire Line
+	4550 3750 4700 3750
+Wire Wire Line
+	4550 3650 4700 3650
+Wire Wire Line
+	4700 3650 4700 3750
+Connection ~ 4700 3750
+Wire Wire Line
+	4550 3550 4700 3550
+Wire Wire Line
+	4550 3450 4700 3450
+Wire Wire Line
+	4700 3450 4700 3550
+Connection ~ 4700 3550
+Wire Wire Line
+	4700 3550 4850 3550
+Wire Wire Line
+	4700 3750 4850 3750
 $EndSCHEMATC
