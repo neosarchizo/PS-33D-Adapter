@@ -47,7 +47,7 @@ U 1 1 61A8E613
 P 3750 2450
 F 0 "J1" H 3708 3160 45  0000 C CNN
 F 1 "CONN_05" H 3708 3076 45  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_1x05_P1.27mm_Vertical" H 3750 3050 20  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3750 3050 20  0001 C CNN
 F 3 "" H 3750 2450 50  0001 C CNN
 F 4 "XXX-00000" H 3708 2981 60  0000 C CNN "Field4"
 	1    3750 2450
@@ -202,7 +202,7 @@ U 1 1 618C7D19
 P 4250 3550
 F 0 "J2" H 4300 3867 50  0000 C CNN
 F 1 "Conn_02x04_Counter_Clockwise" H 4300 3776 50  0000 C CNN
-F 2 "Connector_PinHeader_1.27mm:PinHeader_2x04_P1.27mm_Vertical" H 4250 3550 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 4250 3550 50  0001 C CNN
 F 3 "~" H 4250 3550 50  0001 C CNN
 	1    4250 3550
 	1    0    0    -1  
