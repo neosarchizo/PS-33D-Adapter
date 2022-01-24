@@ -13,10 +13,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Wire Wire Line
-	4050 3450 3900 3450
-Wire Wire Line
-	4050 3650 3900 3650
 $Comp
 L SparkFun-DiscreteSemi:MOSFET-NCH-BSS138 Q1
 U 1 1 61A870A1
@@ -42,10 +38,10 @@ F 4 "TRANS-00830" V 9035 3600 60  0000 C CNN "Field4"
 	0    1    1    0   
 $EndComp
 $Comp
-L SparkFun-Connectors:CONN_05 J1
+L SparkFun-Connectors:CONN_05 J2
 U 1 1 61A8E613
 P 3750 2450
-F 0 "J1" H 3708 3160 45  0000 C CNN
+F 0 "J2" H 3708 3160 45  0000 C CNN
 F 1 "CONN_05" H 3708 3076 45  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 3750 3050 20  0001 C CNN
 F 3 "" H 3750 2450 50  0001 C CNN
@@ -81,8 +77,6 @@ Wire Wire Line
 	8450 3700 8300 3700
 Wire Wire Line
 	6350 3700 6200 3700
-Text GLabel 3750 3450 0    50   Input ~ 0
-3V3
 Text GLabel 6200 2850 1    50   Input ~ 0
 3V3
 Text GLabel 8300 2850 1    50   Input ~ 0
@@ -189,53 +183,60 @@ Wire Wire Line
 Connection ~ 8300 3000
 Wire Wire Line
 	8300 3000 8300 3050
-Wire Wire Line
-	4050 3550 3900 3550
-Wire Wire Line
-	3900 3550 3900 3450
-Connection ~ 3900 3450
-Wire Wire Line
-	3900 3450 3750 3450
 $Comp
-L Connector_Generic:Conn_02x04_Counter_Clockwise J2
-U 1 1 618C7D19
-P 4250 3550
-F 0 "J2" H 4300 3867 50  0000 C CNN
-F 1 "Conn_02x04_Counter_Clockwise" H 4300 3776 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x04_P2.54mm_Vertical" H 4250 3550 50  0001 C CNN
-F 3 "~" H 4250 3550 50  0001 C CNN
-	1    4250 3550
+L SparkFun-Connectors:CONN_04 J1
+U 1 1 61EE1982
+P 3650 3550
+F 0 "J1" H 3608 4160 45  0000 C CNN
+F 1 "CONN_04" H 3608 4076 45  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 3650 4050 20  0001 C CNN
+F 3 "" H 3650 3550 50  0001 C CNN
+F 4 "CONN-09696" H 3608 3981 60  0000 C CNN "Field4"
+	1    3650 3550
 	1    0    0    -1  
 $EndComp
-Text GLabel 3750 3650 0    50   Input ~ 0
+$Comp
+L SparkFun-Connectors:CONN_04 J3
+U 1 1 61EE25CD
+P 4850 3550
+F 0 "J3" H 4808 4160 45  0000 C CNN
+F 1 "CONN_04" H 4808 4076 45  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4850 4050 20  0001 C CNN
+F 3 "" H 4850 3550 50  0001 C CNN
+F 4 "CONN-09696" H 4808 3981 60  0000 C CNN "Field4"
+	1    4850 3550
+	1    0    0    -1  
+$EndComp
+Text GLabel 4000 3250 2    50   Input ~ 0
+3V3
+Text GLabel 5200 3250 2    50   Input ~ 0
+3V3
+Text GLabel 4000 3350 2    50   Input ~ 0
 SDA
-Wire Wire Line
-	4050 3750 3900 3750
-Wire Wire Line
-	3900 3750 3900 3650
-Connection ~ 3900 3650
-Wire Wire Line
-	3900 3650 3750 3650
-Text GLabel 4850 3750 2    50   Input ~ 0
+Text GLabel 5200 3350 2    50   Input ~ 0
+SDA
+Text GLabel 4000 3450 2    50   Input ~ 0
 SCL
-Text GLabel 4850 3550 2    50   Input ~ 0
+Text GLabel 5200 3450 2    50   Input ~ 0
+SCL
+Text GLabel 4000 3550 2    50   Input ~ 0
+GND
+Text GLabel 5200 3550 2    50   Input ~ 0
 GND
 Wire Wire Line
-	4550 3750 4700 3750
+	3750 3250 4000 3250
 Wire Wire Line
-	4550 3650 4700 3650
+	3750 3350 4000 3350
 Wire Wire Line
-	4700 3650 4700 3750
-Connection ~ 4700 3750
+	3750 3450 4000 3450
 Wire Wire Line
-	4550 3550 4700 3550
+	3750 3550 4000 3550
 Wire Wire Line
-	4550 3450 4700 3450
+	4950 3250 5200 3250
 Wire Wire Line
-	4700 3450 4700 3550
-Connection ~ 4700 3550
+	4950 3350 5200 3350
 Wire Wire Line
-	4700 3550 4850 3550
+	4950 3450 5200 3450
 Wire Wire Line
-	4700 3750 4850 3750
+	4950 3550 5200 3550
 $EndSCHEMATC
